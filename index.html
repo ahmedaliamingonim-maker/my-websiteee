@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>AHMED GHONEM Portfolio</title>
+</head>
+
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== Home Section ===== -->
+<section id="home" class="home">
+  <h1>Welcome to my personal website</h1>
+  <h2>AHMED GHONEM</h2>
+  <p>Front End Developer</p>
+
+</section>
+
+<!-- ===== About Section ===== -->
+<section id="about" class="about-section">
+    <img src="ahmed1.jpg" alt="my photo" title="AHMED GHONEM">
+    
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+            I am Ahmed Ghoneim, a student at the Faculty of Computer and Information Sciences. 
+            I work in web design and development, focusing on building fast, simple, and fully 
+            responsive websites that work efficiently on all devices using HTML, CSS, and JavaScript.
+        </p>
+    </div>
+</section>
+
+<!-- ===== Skills Section ===== -->
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+  </ul>
+</section>
+
+<!-- ===== Projects Section ===== -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>A responsive landing page built with HTML, CSS, and JS.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>A personal portfolio website with interactive UI.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 3</h3>
+      <p>A small e-commerce front-end demo project.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact Section ===== -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p><span class="icon">📧</span> Email: <a href="mailto:ahmedaliamingonim@gmail.com">ahmedaliamingonim@gmail.com</a></p>
+    <p><span class="icon">📞</span> Phone:</p>
+    <p><span class="icon">📞</span> <a href="tel:01207867830">01207867830</a></p>
+    <p><span class="icon">📞</span> <a href="tel:01221480359">01221480359</a></p>
+
+    <!-- Social Icons -->
+    <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank"><img src="icons/facebook.jpg" alt="Facebook" class="social-img"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram.jpg" alt="Instagram" class="social-img"></a>
+        <a href="https://x.com/" target="_blank"><img src="icons/x.webp" alt="X Platform" class="social-img"></a>
+    </div>
+</section>
+
+<!-- ===== Navbar Scroll Script ===== -->
+<script>
+    window.addEventListener("scroll", function(){
+        const navbar = document.querySelector(".navbar");
+        if(window.scrollY > 50){
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
+
+</body>
+</html>
